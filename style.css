@@ -17,38 +17,30 @@ img {
 #header {
   background-color: #eeeeee;
   border-bottom: 1px solid #e6e6e6;
-  padding: 27px 0; }
-  #header > div {
-    width: 920px;
-    margin: 0 auto;
-    padding: 0 20px; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #header div ul {
+    display: inline-block;
+    list-style: none;
+    line-height: 100px;
+    margin: 0;
+    padding: 0; }
+    #header div ul li {
+      float: left;
+      width: 160px;
+      text-align: center; }
+      #header div ul li a {
+        color: #818181;
+        font-size: 15px;
+        line-height: 30px;
+        text-decoration: none; }
   #header .headpic {
     float: left;
     padding-right: 20px; }
     #header .headpic #logo {
       height: 80px;
       width: 95px; }
-
-#nav {
-  display: inline-block;
-  list-style: none;
-  line-height: 100px;
-  margin: 0;
-  padding: 0; }
-  #nav ul {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    #nav ul li {
-      float: left;
-      width: 160px;
-      text-align: center; }
-      #nav ul li a {
-        color: #818181;
-        font-size: 15px;
-        line-height: 30px;
-        text-decoration: none; }
 
 #content {
   min-height: 510px;

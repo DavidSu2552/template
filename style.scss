@@ -24,11 +24,28 @@ img {
 #header {
     background-color: #eeeeee;
     border-bottom: 1px solid #e6e6e6;
-    padding: 27px 0;
-        > div {
-            width: 920px;
-            margin: 0 auto;
-            padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        div {
+                ul {
+                    display: inline-block;
+                    list-style:none;
+                    line-height: 100px;
+                    margin: 0;
+                    padding: 0;
+                        li {
+                            float: left;
+                            width: 160px;
+                            text-align: center;
+                                a {
+                                    color: #818181;
+                                    font-size: 15px;
+                                    line-height: 30px;
+                                    text-decoration: none;
+                                }
+                        }
+                }
         }
         .headpic {
             float: left;
@@ -39,32 +56,7 @@ img {
                 }
         }
 }
-
-#nav {
-    display: inline-block;
-    list-style: none;
-    line-height: 100px;
-    margin: 0;
-    padding: 0;
-        ul {
-            display: inline-block;
-            list-style:none;
-            margin: 0;
-            padding: 0;
-                li {
-                    float: left;
-                    width: 160px;
-                    text-align: center;
-                        a {
-                            color: #818181;
-                            font-size: 15px;
-                            line-height: 30px;
-                            text-decoration: none;
-                        }
-                }
-        }
-}
-
+   
 #content {
     min-height: 510px;
     width:880px;
