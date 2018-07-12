@@ -1,18 +1,10 @@
 body {
   background-color: #ffffff;
   font-family: 'OpenSans';
-  margin: 0; }
+  margin: 0 auto; }
 
 img {
   border: 0; }
-
-.clearfix::after, #contents::after {
-  clear: both;
-  content: "";
-  display: block;
-  height: 1%;
-  line-height: 0;
-  visibility: hidden; }
 
 #header {
   background-color: #eeeeee;
@@ -42,14 +34,48 @@ img {
       height: 80px;
       width: 95px; }
 
-#content {
+#contentup {
+  height: 380px;
+  padding: 60 0;
+  display: inline-block;
+  margin: 0 auto; }
+  #contentup div {
+    width: 800;
+    margin: 0 auto;
+    padding: 0 80; }
+    #contentup div img {
+      float: right;
+      margin-left: 60; }
+    #contentup div h1 {
+      color: #2c2c2c;
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0;
+      text-transform: uppercase; }
+    #contentup div h2 {
+      color: #2c2c2c;
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0;
+      text-transform: none; }
+
+#contents {
   min-height: 510px;
-  width: 880px;
-  margin: 0 auto;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 54 40; }
-  #content #contentdown div {
-    float: left;
-    width: 400px;
+  #contents h1 {
+    display: flex;
+    justify-content: left;
+    font-size: 60px;
+    line-height: 60px;
+    color: #2c2c2c;
+    padding-bottom: 20px; }
+  #contents div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 28%;
     margin: 0 20px; }
-  #content #contentdown h1 {
-    margin-left: 20px; }
